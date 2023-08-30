@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="temp-app">
+        <h1>Temperature Converter</h1>
+        <div id="temp-convert" >
+            <label id="temp-text">Enter the temperature that you want to convert : </label>
+            <input type="number" id="temp-number">
+            <label>From : </label><select name="temp-type" class="temp-type" id="temp-from">
+                <option value="option1">°Celsius</option>
+                <option value="option2">°Fahrenheit</option>
+                <option value="option3">Kelvin</option>
+                <option value="option4">Rankine</option>
+            </select>
+
+            <label id="toLabel">To : </label><select name="temp-type" class="temp-type" id="temp-to">
+                <option value="option1">°Celsius</option>
+                <option value="option2">°Fahrenheit</option>
+                <option value="option3">Kelvin</option>
+                <option value="option4">Rankine</option>
+            </select>
+            <!-- <input type="submit" id="submit" onclick="tempConverter()"> -->
+            <button id="submit" >submit</button>
+            <span id="result">= 38°Celsius</span>
+        </>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
